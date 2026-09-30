@@ -1,53 +1,355 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heartlog - Support & Legal</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Heartlog - Dating journal</title>
+  <meta name="description" content="Heartlog is a private dating journal for iPhone. Keep notes on the people you're seeing, log dates and memories, and ask Amie, an AI advisor who has read your notes. Free on the App Store." />
+  <meta name="theme-color" content="#F6EFF2" />
+  <link rel="canonical" href="https://trevornogues.github.io/heartlog-public-pages/" />
+
+  <!-- Social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Heartlog" />
+  <meta property="og:title" content="Heartlog - Dating journal" />
+  <meta property="og:description" content="Your dating life in one place. Prospects, dates, memories, and Amie, an AI advisor who has read your notes. Private by design. Free on iPhone." />
+  <meta property="og:url" content="https://trevornogues.github.io/heartlog-public-pages/" />
+  <meta property="og:image" content="https://trevornogues.github.io/heartlog-public-pages/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Heartlog app icon on a blush background" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Heartlog - Dating journal" />
+  <meta name="twitter:description" content="Your dating life in one place. Prospects, dates, memories, and Amie, an AI advisor who has read your notes. Private by design. Free on iPhone." />
+  <meta name="twitter:image" content="https://trevornogues.github.io/heartlog-public-pages/assets/og-image.jpg" />
+  <meta name="twitter:image:alt" content="Heartlog app icon on a blush background" />
+
+  <link rel="icon" href="/heartlog-public-pages/assets/favicon.png" />
+  <link rel="apple-touch-icon" href="/heartlog-public-pages/assets/icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/heartlog-public-pages/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://trevornogues.github.io/heartlog-public-pages/#org",
+        "name": "Heartlog",
+        "url": "https://trevornogues.github.io/heartlog-public-pages/",
+        "logo": "https://trevornogues.github.io/heartlog-public-pages/assets/icon.png",
+        "email": "heartlogdatingjournal@gmail.com",
+        "founder": { "@type": "Person", "name": "Trevor Nogues", "url": "https://github.com/trevornogues" },
+        "sameAs": [
+          "https://github.com/trevornogues",
+          "https://apps.apple.com/us/app/heartlog-dating-journal/id6757116727"
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://trevornogues.github.io/heartlog-public-pages/#app",
+        "name": "Heartlog: Dating Journal",
+        "alternateName": "Heartlog",
+        "applicationCategory": "LifestyleApplication",
+        "operatingSystem": "iOS",
+        "description": "A private dating journal for iPhone. Keep notes on the people you're seeing, log dates and memories, write daily entries, and ask Amie, a built-in AI advisor who can reference your own notes. Not a dating app and not a social network.",
+        "keywords": "dating journal, dating diary, dating tracker, relationship journal, date log, AI dating advice",
+        "url": "https://trevornogues.github.io/heartlog-public-pages/",
+        "installUrl": "https://apps.apple.com/us/app/heartlog-dating-journal/id6757116727",
+        "downloadUrl": "https://apps.apple.com/us/app/heartlog-dating-journal/id6757116727",
+        "softwareVersion": "1.7",
+        "datePublished": "2026-02-02",
+        "dateModified": "2026-08-10",
+        "image": "https://trevornogues.github.io/heartlog-public-pages/assets/icon.png",
+        "screenshot": [
+          "https://trevornogues.github.io/heartlog-public-pages/assets/screens/home.jpg",
+          "https://trevornogues.github.io/heartlog-public-pages/assets/screens/prospects.jpg",
+          "https://trevornogues.github.io/heartlog-public-pages/assets/screens/amie.jpg",
+          "https://trevornogues.github.io/heartlog-public-pages/assets/screens/partner.jpg"
+        ],
+        "author": { "@id": "https://trevornogues.github.io/heartlog-public-pages/#org" },
+        "publisher": { "@id": "https://trevornogues.github.io/heartlog-public-pages/#org" },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Heartlog - the journal",
+            "description": "Full journal: prospects, dates, memories, photos, daily entries, timelines, partner mode, weekly polls, share cards, JSON export. Includes a small number of free Amie insights.",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "url": "https://apps.apple.com/us/app/heartlog-dating-journal/id6757116727"
+          },
+          {
+            "@type": "Offer",
+            "name": "20 Amie Insights",
+            "description": "One-time credit pack of 20 Amie requests. Credits never expire.",
+            "price": "3.99",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "url": "https://trevornogues.github.io/heartlog-public-pages/#pricing"
+          },
+          {
+            "@type": "Offer",
+            "name": "Heartlog Premium (Unlimited Amie), monthly",
+            "description": "Unlimited Amie requests, subject to the fair-use policy. Billed monthly through Apple.",
+            "price": "6.99",
+            "priceCurrency": "USD",
+            "category": "subscription",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "6.99",
+              "priceCurrency": "USD",
+              "billingDuration": "P1M"
+            },
+            "availability": "https://schema.org/InStock",
+            "url": "https://trevornogues.github.io/heartlog-public-pages/#pricing"
+          },
+          {
+            "@type": "Offer",
+            "name": "Heartlog Premium (Unlimited Amie), yearly",
+            "description": "Unlimited Amie requests, subject to the fair-use policy. Free trial, then $39.99 a year through Apple.",
+            "price": "39.99",
+            "priceCurrency": "USD",
+            "category": "subscription",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "39.99",
+              "priceCurrency": "USD",
+              "billingDuration": "P1Y"
+            },
+            "availability": "https://schema.org/InStock",
+            "url": "https://trevornogues.github.io/heartlog-public-pages/#pricing"
+          }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1",
+          "ratingCount": "19"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://trevornogues.github.io/heartlog-public-pages/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What does Amie see?",
+            "acceptedAnswer": { "@type": "Answer", "text": "When you ask Amie something, your message and limited context from your journal (recent dates, prospects, entries) are sent to OpenAI to generate the reply. Heartlog does not save or log the chat, and data sent through the OpenAI API is not used to train their models. You can turn Amie off in Settings and the journal works without her." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is my journal private?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Heartlog is a personal journal, not a social network. Nobody else can see your entries. Your data is stored in your own account on Firebase (Google Cloud), is never sold or shared with third parties, and is not used to train AI models. You can export everything as JSON or delete your account from Settings at any time." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Heartlog free?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. The journal is free to download and use: prospects, dates, memories, photos, daily entries, timelines, partner mode, polls, and share cards. New accounts also get a small number of free Amie insights. After that, Amie is the only paid part: a one-time pack of 20 insights for $3.99, or Unlimited Amie for $6.99 a month or $39.99 a year." }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I cancel Unlimited Amie?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Subscriptions are managed by Apple. Open Settings on your iPhone, tap your name, tap Subscriptions, select Heartlog, and tap Cancel Subscription. If you cancel during a free trial you are not charged. The journal keeps working either way." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Amie a therapist?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. Amie gives dating and relationship guidance only. She is not a licensed therapist, counselor, or medical professional, and Heartlog is not a substitute for professional care. If you have health or mental health concerns, please talk to a qualified provider." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Heartlog</h1>
-            <p class="tagline">Your Personal Dating Journal</p>
-        </header>
+  <main class="container">
+    <nav class="topnav" aria-label="Site">
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="/heartlog-public-pages/support.html">Support</a>
+      <a href="/heartlog-public-pages/privacy-policy.html">Privacy</a>
+    </nav>
 
-        <main>
-            <div class="card support-card">
-                <h2>📬 Contact Support</h2>
-                <p>Have questions, feedback, or need help? We're here for you!</p>
-                
-                <div class="support-info">
-                    <p><strong>Email:</strong> <a href="mailto:heartlogdatingjournal@gmail.com">heartlogdatingjournal@gmail.com</a></p>
-                    <p class="response-time">We typically respond within 24-48 hours.</p>
-                </div>
-                
-                <div class="links">
-                    <a href="support.html" class="button">View Full Support Page</a>
-                </div>
-            </div>
+    <header class="hero">
+      <img class="app-icon" src="/heartlog-public-pages/assets/icon.png" alt="Heartlog app icon, a heart on a rose gradient" width="64" height="64" />
+      <p class="wordmark">Heartlog</p>
+      <h1 class="page-title">Your dating life in one place.</h1>
+      <p class="lede">A private journal for the people you're seeing. Keep notes on each prospect, log every date while it's fresh, and ask Amie, an advisor who has actually read your notes, before the next one.</p>
 
-            <div class="card">
-                <h2>📄 Legal Documents</h2>
-                <p>Please review our legal policies below:</p>
-                
-                <div class="links">
-                    <a href="privacy-policy.html" class="button">Privacy Policy</a>
-                    <a href="terms-of-service.html" class="button">Terms of Service</a>
-                </div>
-            </div>
+      <div class="cta-row">
+        <a class="button button-primary" href="https://apps.apple.com/us/app/heartlog-dating-journal/id6757116727">Download on the App Store</a>
+        <!-- Rating pulled from the App Store listing. Refresh the number and count after new reviews land. -->
+        <a class="rating" href="https://apps.apple.com/us/app/heartlog-dating-journal/id6757116727?see-all=reviews" aria-label="Rated 5.0 out of 5 on the App Store from 19 ratings">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <span class="rating-text"><strong>5.0</strong> on the App Store · 19 ratings</span>
+        </a>
+      </div>
+      <p class="cta-sub">Free on iPhone · Since February 2026 · <a href="#pricing">See pricing for Amie</a></p>
+    </header>
 
-            <div class="info">
-                <p>Heartlog is a dating journal app that helps you track your dating life and get AI-powered advice from Amie, your personal dating advisor.</p>
-                <p>Available on the App Store.</p>
-            </div>
-        </main>
+    <p class="muted">
+      Heartlog is a personal journal, not a social network and not a dating app.
+      Prospects, dates, memories, photos, and daily entries live in your own account,
+      and nobody else can see them.
+    </p>
+    <p class="muted">
+      Amie is optional. Ask her a question and she answers from your recent dates,
+      prospects, and entries, not from generic advice. Turn her off in Settings and
+      the journal works without her.
+    </p>
+    <p class="muted scope">
+      Built for people who want to date with intention: remember the details, notice
+      the patterns, and decide with a clear head. Also works after you've found
+      someone, with a committed-relationship mode. For adults 18 and over.
+    </p>
 
-        <footer>
-            <p>&copy; 2026 Heartlog. All rights reserved.</p>
-        </footer>
-    </div>
+    <section id="features" class="section">
+      <h2>What Heartlog does</h2>
+      <div class="screens" role="list">
+        <figure class="screen" role="listitem">
+          <img src="/heartlog-public-pages/assets/screens/prospects.jpg" alt="Prospects in Heartlog: an Active tab with Sam and Jordan, a Graveyard tab, and a Dating Journey timeline of recent dates" width="640" height="1056" loading="lazy" decoding="async" />
+          <figcaption>
+            <h3>Keep track of who you're seeing.</h3>
+            <p>A profile for each prospect: how you met, where things stand, what you want to remember. When it ends, move them to the Graveyard instead of forgetting.</p>
+          </figcaption>
+        </figure>
+        <figure class="screen" role="listitem">
+          <img src="/heartlog-public-pages/assets/screens/home.jpg" alt="Heartlog home: a July monthly recap card, the weekly poll, active prospects, and an upcoming date with Jordan on Thursday with a thought saved for the date" width="640" height="1056" loading="lazy" decoding="async" />
+          <figcaption>
+            <h3>Log the date while it's fresh.</h3>
+            <p>Upcoming and past dates on one calendar, with a note before and a reflection after. Add photos, and get a monthly recap of how the month went.</p>
+          </figcaption>
+        </figure>
+        <figure class="screen" role="listitem">
+          <img src="/heartlog-public-pages/assets/screens/amie.jpg" alt="Amie chat in Heartlog: Amie introduces herself as a personal dating advisor who can see your prospects and notes, with suggested prompts underneath" width="640" height="1056" loading="lazy" decoding="async" />
+          <figcaption>
+            <h3>Ask Amie, who has read your notes.</h3>
+            <p>“How did my last date go?” “What should we do for a second date?” Amie answers from your journal. Optional, and she can be turned off.</p>
+          </figcaption>
+        </figure>
+        <figure class="screen" role="listitem">
+          <img src="/heartlog-public-pages/assets/screens/partner.jpg" alt="Partner mode in Heartlog: Jordan, two months together, a How's My Relationship button, questions to ask Jordan, and a Your Story timeline" width="640" height="1056" loading="lazy" decoding="async" />
+          <figcaption>
+            <h3>Keep going once it turns into something.</h3>
+            <p>Switch to committed mode. Track quality time, save questions to ask, and watch your story build in one timeline.</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <h3 class="list-title">Also in the free journal</h3>
+      <ul class="feature-list">
+        <li><strong>Daily journal.</strong> Write an entry to process the day, not just the dates.</li>
+        <li><strong>Timelines.</strong> Your dating journey as one chronological story, for singles and for couples.</li>
+        <li><strong>Shareable cards.</strong> Turn a date or a monthly recap into a card you can text a friend. You choose what's on it; names and details can be hidden.</li>
+        <li><strong>Weekly community polls.</strong> Vote on a dating question and see anonymous results from other Heartlog users. Optional.</li>
+        <li><strong>Third-date check-in.</strong> A short prompt to help you decide whether to keep seeing someone.</li>
+        <li><strong>Your data, your call.</strong> Export everything as JSON or delete your account from Settings. Day and night modes.</li>
+      </ul>
+    </section>
+
+    <section id="pricing" class="section">
+      <h2>Pricing</h2>
+      <p class="muted">The journal is free. Amie is the only thing you can pay for, and she's optional.</p>
+      <div class="plans">
+        <article class="plan">
+          <p class="plan-badge">Default</p>
+          <h3>Free</h3>
+          <p class="price">$0 <span>on the App Store</span></p>
+          <p>Your full journal: prospects, dates, memories, photos, daily entries, timelines, partner mode, polls, share cards, and export. New accounts also get a small number of free Amie insights to try her out.</p>
+          <a class="button button-secondary" href="https://apps.apple.com/us/app/heartlog-dating-journal/id6757116727">Download on the App Store</a>
+        </article>
+        <article class="plan plan-ai">
+          <p class="plan-badge plan-badge-accent">Optional</p>
+          <h3>Amie, the AI advisor</h3>
+          <p class="price">From $3.99 <span>one-time</span></p>
+          <p class="price-note">Pick whatever fits how often you ask.</p>
+          <ul class="plan-list">
+            <li><strong>20 Amie Insights, $3.99.</strong> One-time. Credits never expire.</li>
+            <li><strong>Unlimited Amie, $6.99 a month.</strong></li>
+            <li><strong>Unlimited Amie, $39.99 a year.</strong> Starts with a free trial. About $3.33 a month.</li>
+          </ul>
+          <p class="fine">Billed through Apple. Cancel any time in your Apple ID subscriptions; cancel during the trial and you're not charged. Unlimited has a fair-use limit to keep the service fast for everyone. Everything in the free journal keeps working without Amie.</p>
+        </article>
+      </div>
+      <p class="muted small">Prices in US dollars. The App Store shows the price in your local currency before you buy.</p>
+    </section>
+
+    <!--
+      Testimonial strip (not yet live).
+      Collect 3 one-line quotes from users (first name, city, a specific outcome),
+      then remove this comment wrapper.
+
+    <section id="people" class="section">
+      <h2>What people say</h2>
+      <ul class="quotes">
+        <li class="quote">
+          <blockquote>“QUOTE: a specific outcome.”</blockquote>
+          <cite>FIRST NAME · CITY</cite>
+        </li>
+        <li class="quote">
+          <blockquote>“QUOTE”</blockquote>
+          <cite>FIRST NAME · CITY</cite>
+        </li>
+        <li class="quote">
+          <blockquote>“QUOTE”</blockquote>
+          <cite>FIRST NAME · CITY</cite>
+        </li>
+      </ul>
+    </section>
+    -->
+
+    <section id="faq" class="section faq">
+      <h2>Questions people ask</h2>
+
+      <h3>What does Amie see?</h3>
+      <p>When you ask Amie something, your message and limited context from your journal (recent dates, prospects, entries) are sent to OpenAI to generate the reply. Heartlog does not save or log the chat, and data sent through the OpenAI API is not used to train their models. You can turn Amie off in Settings and the journal works without her. The full detail is in the <a href="/heartlog-public-pages/privacy-policy.html">Privacy Policy</a>.</p>
+
+      <h3>Is my journal private?</h3>
+      <p>Yes. Heartlog is a personal journal, not a social network. Nobody else can see your entries. Your data is stored in your own account on Firebase (Google Cloud), is never sold or shared with third parties, and is not used to train AI models. You can export everything as JSON or delete your account from Settings at any time.</p>
+
+      <h3>Is Heartlog free?</h3>
+      <p>Yes. The journal is free to download and use. New accounts also get a small number of free Amie insights. After that, Amie is the only paid part: a one-time pack of 20 insights for $3.99, or Unlimited Amie for $6.99 a month or $39.99 a year.</p>
+
+      <h3>How do I cancel Unlimited Amie?</h3>
+      <p>Subscriptions are managed by Apple. Open Settings on your iPhone, tap your name, tap Subscriptions, select Heartlog, and tap Cancel Subscription. If you cancel during a free trial you're not charged. The journal keeps working either way.</p>
+
+      <h3>Is Amie a therapist?</h3>
+      <p>No. Amie gives dating and relationship guidance only. She is not a licensed therapist, counselor, or medical professional, and Heartlog is not a substitute for professional care. If you have health or mental health concerns, please talk to a qualified provider.</p>
+    </section>
+
+    <section id="about" class="section founder">
+      <h2>Why I built this</h2>
+      <div class="founder-card">
+        <!-- TODO: replace the initials with a real photo, e.g.
+             <img class="founder-photo" src="/heartlog-public-pages/assets/trevor.jpg" alt="Trevor Nogues" width="72" height="72" /> -->
+        <div class="founder-photo founder-photo-placeholder" aria-hidden="true">TN</div>
+        <div class="founder-body">
+          <p>I'm Trevor Nogues. I'm fascinated by interpersonal connection and psychology, and by whether technology can make our relationships better instead of noisier. Dating apps get a bad rap, so I wanted to build something for the other side of the swipe: a private place to date with intention and remember how you actually felt.</p>
+          <p>It worked on me. Since building Heartlog I met my partner, and we've been together for almost a year. Heartlog is a solo project. If something is off, email me at <a href="mailto:heartlogdatingjournal@gmail.com">heartlogdatingjournal@gmail.com</a>.</p>
+          <p class="founder-links">
+            <a href="https://github.com/trevornogues">GitHub</a>
+            <a href="https://apps.apple.com/us/app/heartlog-dating-journal/id6757116727">5 stars on the App Store</a>
+            <!-- TODO: add X, Instagram, or LinkedIn profile link here -->
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="page-foot">
+      <span>&copy; 2026 Trevor Nogues</span>
+      <a href="/heartlog-public-pages/privacy-policy.html">Privacy</a>
+      <a href="/heartlog-public-pages/terms-of-service.html">Terms</a>
+      <a href="/heartlog-public-pages/support.html">Support</a>
+      <a href="/heartlog-public-pages/changelog/">Changelog</a>
+      <a href="https://apps.apple.com/us/app/heartlog-dating-journal/id6757116727">App Store</a>
+    </footer>
+  </main>
 </body>
 </html>
-

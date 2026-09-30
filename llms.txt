@@ -1,0 +1,38 @@
+# Heartlog
+
+> Heartlog (App Store name: Heartlog: Dating Journal) is a private dating journal for iPhone. Keep notes on the people you're seeing, log dates and memories, write daily entries, and ask Amie, a built-in AI advisor who can reference your own notes. Not a dating app and not a social network. Free on the App Store.
+
+- Developer: Trevor Nogues (solo project). GitHub: https://github.com/trevornogues
+- Platform: iOS. Download: https://apps.apple.com/us/app/heartlog-dating-journal/id6757116727
+- Launched: February 2, 2026 (1.0). Current version: 1.7 (August 10, 2026).
+- Audience: adults (18+) who want to date with intention, and couples who want to keep a shared story going.
+- Support: heartlogdatingjournal@gmail.com
+
+## Pricing
+
+- The journal is free: prospects, dates, memories, photos, daily entries, timelines, partner mode, weekly polls, share cards, JSON export. New accounts get a small number of free Amie insights.
+- Amie is the only paid part. 20 Amie Insights: $3.99 one-time, credits never expire. Unlimited Amie (Heartlog Premium): $6.99 per month or $39.99 per year, the yearly plan starts with a free trial. Billed through Apple; cancel any time in Apple ID subscriptions. Unlimited is subject to a fair-use limit.
+
+## What it does
+
+- Prospects: a profile for each person, with how you met, where things stand, and notes. Active and Graveyard tabs.
+- Dates: upcoming and past dates on a calendar, with a note before, a reflection after, and photos.
+- Daily journal entries.
+- Amie: ask a question and get an answer that references your recent dates, prospects, and entries. Optional; can be disabled in Settings. Amie is not a therapist or medical professional.
+- Committed-relationship mode: quality time, questions to ask your partner, and a shared timeline.
+- Monthly recaps, shareable date cards (user chooses what is visible), weekly anonymous community polls, third-date check-in.
+- Day and night modes.
+
+## Privacy
+
+- Account: email and name. Data stored in the user's own account on Firebase (Google Cloud). Not sold or shared with third parties, not used to train AI models.
+- Amie requests are sent to OpenAI with limited context from the journal. Heartlog does not save or log chat messages or responses. OpenAI API data is not used to train their models.
+- Export all data as JSON or delete the account from Settings.
+
+## Pages
+
+- Home: https://trevornogues.github.io/heartlog-public-pages/
+- Changelog: https://trevornogues.github.io/heartlog-public-pages/changelog/
+- Support: https://trevornogues.github.io/heartlog-public-pages/support.html
+- Privacy Policy: https://trevornogues.github.io/heartlog-public-pages/privacy-policy.html
+- Terms of Service: https://trevornogues.github.io/heartlog-public-pages/terms-of-service.html
